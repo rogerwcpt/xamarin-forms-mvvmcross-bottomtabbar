@@ -1,8 +1,8 @@
 # Xamarin Forms using MVVMCross framework to render a bottom Tab Bar
 
-Xamarin Forms 3.6 supports the rendering of a TabBar in Android natively at the bottom.
+Xamarin Forms 3.x supports the rendering of a TabBar in Android natively at the bottom.
 
-This project takes it one step further to see if MvvmCross's support for the TabbarPage works in this mode.
+This project takes it one step further to see if MvvmCross's support for the TabbarPage works in this bottom rendering mode, espcially when navigation back and forth.
 
 ## Screenshot
 
