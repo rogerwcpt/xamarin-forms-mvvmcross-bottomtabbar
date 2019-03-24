@@ -1,0 +1,40 @@
+# Xamarin.Android
+# Build a Xamarin.Android project.
+# Add steps that test, sign, and distribute an app, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xamarin
+
+trigger:
+- master
+
+pool:
+  vmImage: 'macOS-10.13'
+
+variables:
+  buildConfiguration: 'Release'
+  outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
+
+steps:
+- task: NuGetToolInstaller@0
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '**/*.sln'
+
+- task: XamarinAndroid@1
+  inputs:
+    projectFile: '**/*droid*.csproj'
+    outputDirectory: '$(outputDirectory)'
+    configuration: '$(buildConfiguration)'
+
+#Your build pipeline references an undefined variable named ‘Parameters.appFiles’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+- task: AppCenterDistribute@0
+  displayName: 'Deploy $(build.binariesdirectory)/$(BuildConfiguration)/*.apk to Visual Studio App Center'
+  inputs:
+    serverEndpoint: AppCenter
+    appSlug: GitHubProjects/MvxColoredFormsTabs
+    appFile: '$(Parameters.appFiles)'
+    symbolsIncludeParentDirectory: false
+    releaseNotesInput: 'New Version'
+  condition: succeededOrFailed()
+
+    
