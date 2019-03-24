@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mvx:MvxContentPage 
+    x:TypeArguments="ViewModels:Tab1ViewModel" 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:Mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms" 
+    xmlns:ViewModels="clr-namespace:MvxColoredFormsTabs.ViewModels;assembly=MvxColoredFormsTabs" 
+    x:Class="MvxColoredFormsTabs.Tab1View" Title="Tab1" Icon="ic_action_looks_one">
+    <StackLayout Margin="20, 20, 20, 0">
+        <Label HorizontalOptions="Center" Text="Home View" />
+        <StackLayout Orientation="Vertical">
+            <Button Text="BUTTON 1" BackgroundColor="#8BC63E"  TextColor="White" BorderColor="#71A130" BorderWidth="1" HorizontalOptions="FillAndExpand" HeightRequest="60" Command="{Binding Button1Command}" />
+            <Button Text="BUTTON 2" BackgroundColor="#00BCE4"  TextColor="White" BorderColor="#0092B3" BorderWidth="1" HorizontalOptions="FillAndExpand" HeightRequest="60" />
+        </StackLayout>
+    </StackLayout>
+</Mvx:MvxContentPage>

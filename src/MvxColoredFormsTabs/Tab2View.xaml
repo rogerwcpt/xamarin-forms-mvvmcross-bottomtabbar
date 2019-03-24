@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mvx:MvxContentPage 
+    x:TypeArguments="ViewModels:Tab2ViewModel" 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:Mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms" 
+    xmlns:ViewModels="clr-namespace:MvxColoredFormsTabs.ViewModels;assembly=MvxColoredFormsTabs" 
+    x:Class="MvxColoredFormsTabs.Tab2View"  Title="Tab2" Icon="ic_action_looks_two">
+    <Label Text="Tab2" VerticalOptions="Center" HorizontalOptions="Center" />
+</Mvx:MvxContentPage>
