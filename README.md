@@ -9,6 +9,6 @@ This project takes it one step further to see if MvvmCross's support for the Tab
 
 |Flags|Build Time|Binary Size|Startup Time|
 |-----|----------|-----------|------------|
-|Embed Assemblies in native Code|1min 56sec|15.2MB|3.8sec|
-|AOT + LLVM|3min 1 sec|26.8MB|2.65sec|
-|Embed Assemblies + AOT + LVVM|2min 47sec|18.7MB|2.25sec|
+|Embed Assemblies in native Code|1 min 56 sec|15.2MB|3.8 sec|
+|AOT + LLVM|3 min 1 sec|26.8MB|2.65 sec|
+|Embed Assemblies + AOT + LVVM|2 min 47 sec|18.7MB|2.25 sec|
