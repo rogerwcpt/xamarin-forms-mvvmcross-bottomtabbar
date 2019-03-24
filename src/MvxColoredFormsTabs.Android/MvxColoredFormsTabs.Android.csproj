@@ -41,7 +41,6 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <AotAssemblies>true</AotAssemblies>
     <EnableLLVM>true</EnableLLVM>
-    <BundleAssemblies>true</BundleAssemblies>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />

@@ -4,8 +4,12 @@ Xamarin Forms 3.6 supports the rendering of a TabBar in Android natively at the 
 
 This project takes it one step further to see if MvvmCross's support for the TabbarPage works in this mode.
 
-# Aside: Build Times in AppCenter
+## Screenshot
 
+### Android
+<img src="imgs/droid-screenshot.png" height="400">
+
+# Aside: Build Times in AppCenter
 
 |Flags|Build Time|Binary Size|Startup Time|
 |-----|----------|-----------|------------|
